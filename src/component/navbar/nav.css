@@ -1,0 +1,7 @@
+.navbar li a{
+	font-weight: bold;
+}
+
+.navbar-default{
+	background-color: rgb(221, 210, 216);
+}
