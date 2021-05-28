@@ -5,7 +5,10 @@ const Footer = ()=>{
        <div>
        <hr/>
           <center>
-            <p id="foott">  This Site is Create & Design By Ruchika Agarwal Reserved All Copyrights © 2021.. </p>
+             <div id="foott">
+               <p>  This Site is Created & Design By Ruchika Agarwal Reserved All Copyrights © 2021.. </p>
+             </div>
+           
           </center>
           
        

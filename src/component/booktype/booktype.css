@@ -1,3 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.booktypepageheader{
+  background: linear-gradient(57deg, #00c6a7, #1e4d92);
+  margin-top: -1.1%;
+  color: white;
+  /* margin: auto; */
+}
+
+.searchheading{
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 1%;
+  margin-bottom: 1.5%;
+}
+
+.searchbook{
+  padding: 7px;
+  padding-left: 65px;
+  padding-right: 65px;
+  font-size: 20px;
+  color: black;
+  border-radius: 500px;
+}
+
+.searchbutton{
+  background-color: rgb(236, 125, 61);
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 500px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 1%;
+}
+
+.placerequestheading{
+  /* font-weight: bold; */
+  font-style: italic;
+  /* border: 2px solid black; */
+  padding-bottom: 1%;
+  /* margin-bottom: 5%; */
+}
+
+.filterbox{
+  border: 2px solid black;
+  width: 70%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+@media screen  and (min-width:1010px){
+  .filterbox{
+      width: 100%;
+     
+  }
+}
+@media screen  and (min-width:800px){
+  .filterbox{
+      width: 100%;
+  }
+  .categryui{
+    margin-left: 5%;
+  }
+  .costui{
+    margin-left: 5%;
+  }
+}
+
+@media screen  and (min-width:650px){
+  .filterbox{
+      width: 100%;
+      margin-left: 2%;
+  }
+  .categryui{
+    margin-left: 2%;
+  }
+  .costui{
+    margin-left: 2%;
+  }
+}
+
+.categryui{
+  margin-left: 13%;
+  font-size: 20px;
+  margin-bottom: 3%;
+}
+
+.categryheading{
+  margin-left: 8%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.costheading{
+  margin-left: 8%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+
+.costui{
+  margin-left: 13%;
+  font-size: 20px;
+  margin-bottom: 3%;
+}
+
+.filterheading{
+  font-style:italic;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
 
 .maincard{
     margin-top: 2%;

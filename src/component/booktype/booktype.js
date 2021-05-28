@@ -4,12 +4,39 @@ class Booktype extends React.Component{
     render(){
         return(
             <>
+                <div className="booktypepageheader">  
+                    <center>
+                        <h3 className="searchheading"> <u> Search second hand books online </u>  </h3>
+                        <input type="text" className="searchbook" placeholder="Search Books "/>
+                        <input type ="button" className="searchbutton" value="Search"/>
+                        <h3 className="placerequestheading"> Cann't Find Books? <b>Click To Request. </b>  </h3>
+                    </center>
+                </div>
                 <h1> <center> Most Populer Books</center>  </h1>
-                <div>
-                    <div className="col-sm-2">
-                        filter
-                    </div>
-                    <div className=" col-sm-10">
+                <div> 
+                    <div className="col-sm-3"> 
+                        <div className="filterbox">
+                             <center> <h1 className="filterheading"> FILTER </h1> </center>  
+                             <u> <h4 className="categryheading"> Categroy </h4> </u>  
+                             <ul className="categryui">
+                                <li> School Books </li> 
+                                <li> College Books </li> 
+                                <li> Compitation Books </li>
+                                <li> Other </li>
+                             </ul>
+                             <u> <h4 className="costheading"> Cost </h4> </u>  
+                             <ul className="costui">
+                                <li> High to Low </li> 
+                                <li> Low to High </li> 
+                             </ul>
+                             <u> <h4 className="costheading"> Book Condition </h4> </u>  
+                             <ul className="costui">
+                                <li>  New </li> 
+                                <li> Old </li> 
+                             </ul>
+                        </div>
+                    </div> 
+                    <div className=" col-sm-8">
                         <div className="maincard">
                             <div className="card1">
                                 <img src="./images/booo.png" alt="Max"  className="Img"/>

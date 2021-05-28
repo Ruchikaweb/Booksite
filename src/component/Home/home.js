@@ -1,8 +1,9 @@
 import react from 'react';
 import Header from '../header/header'
+import Footer from '../footer/footer'
 import '../Home/home.css'
 const Home = ()=> {
-    return(
+    return( 
         <>
          <Header/> 
         <hr/>
@@ -12,6 +13,11 @@ const Home = ()=> {
                         <img src="./images/booo.png" alt="Max"  className="Img"/>
                     <div class="TextContent">
                         <div className="Name">book name</div>
+                        <div> 
+                            <span className="oprice"> Original Price </span> 
+                            <span className="mprice"> My Price </span>
+                        </div>
+                       
                         <div className="btn">Buy Now</div>  
                         <div className="btn">Add to Cart</div> 
                     </div>        
@@ -90,6 +96,8 @@ const Home = ()=> {
             <div className="comtainer"> 
                 <div className="btn btn-success" ><a href="/booktype"> see more</a></div>  
             </div>
+
+            <Footer/>
             
         </>
 
