@@ -3,8 +3,6 @@ import '../header/header.css'
 const Header = ()=>{
     return(      
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                
-
                 <div class="carousel-inner"> 
 
                     <div class="item active"> 

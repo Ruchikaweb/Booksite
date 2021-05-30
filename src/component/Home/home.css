@@ -1,5 +1,21 @@
 .oprice{
   text-decoration: line-through;
+  color: gray;
+}
+
+.offer{
+  color: red;
+  font-weight: bold;
+}
+
+.homepagedetails{
+  border: 25px solid rgb(243, 242, 242);
+  border-radius: 50px;
+  box-shadow: black 2px 2px 5px;
+}
+
+.homepanel{
+  margin: 2% 4% ;
 }
 
 .maincard{
@@ -85,7 +101,7 @@
     position: relative;
     font-weight: bold;
     letter-spacing: 1px;
-    color: darkblue;
+    color: pink;
     font-size: 20px;
     padding-top: 20%;
 }

@@ -1,9 +1,9 @@
-import React from 'react' ;
-import '../sellsbbook/sell.css'
-class sells extends React.Component{
+import React from 'react' 
+import '../Request/Request.css'
+class Request extends React .Component{
     constructor(){
         super()
-    } 
+    }
     render(){
         return(
             <>
@@ -18,7 +18,7 @@ class sells extends React.Component{
                 </div>
             </div>
             <div style={{textAlign:'center'}}>
-                <h1> Sells Second Books  </h1>
+                <h1> Request Books You Cannot Find </h1>
                 <p style={{fontSize:'20px'}}> For any specific details call us at. </p>
                 <p style={{fontSize:'20px'}}> 8209111389 , 9413595935 </p>
                 <center> <hr style={{width:'25%'}}></hr></center> 
@@ -46,15 +46,6 @@ class sells extends React.Component{
                         <input type="text" class="form-control"  placeholder="Enter details" required autoComplete="off" name="email"/>
                     </div>
                     <div class="form-group">
-                        <label>Purpose</label>
-                        <select style={{fontSize:'20px'}} class="form-control" id="sel1">
-                            <option disabled selected> Select purpose </option>
-                            <option> For sell </option>
-                            <option> For Donate  </option>
-
-                        </select>
-                    </div>
-                    <div class="form-group">
                         <label>Location/College</label>
                         <input type="text" class="form-control"  placeholder="Enter location" required autoComplete="off" name="email"/>
                     </div>
@@ -74,7 +65,4 @@ class sells extends React.Component{
     }
 }
 
-    
-
-
-export default sells ;
+export default Request 

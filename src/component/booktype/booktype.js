@@ -1,5 +1,6 @@
 import React from 'react';
 import '../booktype/booktype.css'
+import {Link} from 'react-router-dom'
 class Booktype extends React.Component{
     render(){
         return(
@@ -9,15 +10,16 @@ class Booktype extends React.Component{
                         <h3 className="searchheading"> <u> Search second hand books online </u>  </h3>
                         <input type="text" className="searchbook" placeholder="Search Books "/>
                         <input type ="button" className="searchbutton" value="Search"/>
-                        <h3 className="placerequestheading"> Cann't Find Books? <b>Click To Request. </b>  </h3>
+                        <Link to="/request">  <h3 className="placerequestheading"> Cann't Find Books?  <b>Click To Request. </b>  </h3> </Link>
+                       
                     </center>
                 </div>
-                <h1> <center> Most Populer Books</center>  </h1>
+                <h1> <center>Available Books</center>  </h1>
                 <div> 
                     <div className="col-sm-3"> 
                         <div className="filterbox">
                              <center> <h1 className="filterheading"> FILTER </h1> </center>  
-                             <u> <h4 className="categryheading"> Categroy </h4> </u>  
+                             <u> <h4 className="categryheading"> Category </h4> </u>  
                              <ul className="categryui">
                                 <li> School Books </li> 
                                 <li> College Books </li> 
@@ -89,7 +91,7 @@ class Booktype extends React.Component{
                         </div>
                     </div>
                 </div>
-                <hr/>
+               
             </>
         )
     }

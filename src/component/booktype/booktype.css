@@ -40,6 +40,7 @@
 .placerequestheading{
   /* font-weight: bold; */
   font-style: italic;
+  color: white;
   /* border: 2px solid black; */
   padding-bottom: 1%;
   /* margin-bottom: 5%; */
@@ -114,6 +115,8 @@
   font-weight: bold;
   margin-bottom: 2px;
 }
+
+
 
 
 .maincard{
@@ -191,7 +194,7 @@
 
 }
 .maincard .card1:hover .TextContent{
-    height: 160px;
+    height: 170px;
     
 }
 .maincard .card1 .TextContent .Name{
@@ -212,7 +215,7 @@
     padding: 10px 20px;
     background-color:rgb(218, 23, 23);
     border-radius: 4px;
-    margin-top:10px;
+    margin-top:5px;
     margin-right: 12px;
     text-decoration: none;
     font-weight: 200;
