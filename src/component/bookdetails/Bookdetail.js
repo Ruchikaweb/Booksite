@@ -73,11 +73,10 @@ class Bookdetail extends React.Component{
                                 <label><b> Other details </b></label>
                                 <textarea class="form-control" placeholder="Write a review " rows="5" id="comment"></textarea>
                             </div>
-                            <input type="button" className="btn btn-danger" value="Post Review"/>
+                            <input style={{marginBottom:'2%'}} type="button" className="btn btn-danger" value="Post Review"/>
                         </form>
                     </div>
                 </div>
-                <hr id="hrset"/>
             </div> 
             <div id="foott">
              <div className="row">
@@ -87,9 +86,9 @@ class Bookdetail extends React.Component{
                             <a href="https://www.linkedin.com/in/ruchika-agarwal-51a2841bb/" target="_blank"> <img src="/images/in logo.png" id="istyel" alt="inlogo"/> </a>
                             <a href="https://github.com/Ruchikaweb" target="_blank"> <img src="/images/git logo.png" id="istyel" alt="gitlog"/> </a> 
                         </footer>
-                    </div>
+                    </div>  
                 </div> <br/>
-                 <p>  This Site is Created & Design By Ruchika Agarwal Reserved All Copyrights © 2021.. </p>
+                 <p style={{marginLeft:'25%'}}>  This Site is Created & Design By Ruchika Agarwal Reserved All Copyrights © 2021.. </p>
               
              </div>
             </>

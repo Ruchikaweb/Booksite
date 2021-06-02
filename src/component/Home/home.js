@@ -123,6 +123,22 @@ const Home = ()=> {
                     </div>
                 </div>
             </div>
+            <hr/>
+            <div>
+                <center>  <h1> Book online: Deals on second hand books. </h1> </center>
+                <div className="container ">
+                    <div>
+                        <img id="serviceimgg" src="./images/ser.jpg" alt="wrong"/>
+                        <h2> Second hand book online </h2>
+                        <h3> Cash On Delivery </h3>
+                    </div>
+                    <div>
+                        <img id="serviceimgg" src="./images/ser.jpg" alt="wrong"/>
+                        <h2> Second hand book online </h2>
+                        <h3> Cash On Delivery </h3>
+                    </div>
+                </div>
+            </div>
         
 
             <Footer/>
