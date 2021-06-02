@@ -1,0 +1,54 @@
+#bookdetailsimg{
+    border: 2px solid black;
+    width: 70%;
+    height: 70%;
+    margin-top: 25%;
+    margin-left: 20%;
+}
+
+#bookdetailscontent{
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+#hrset{
+    width: 75%;
+    margin: auto;
+}
+
+#author{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+#booktypeinoutstock{
+    font-weight: bold;
+    width: fit-content;
+    box-shadow: gray 1px 1px 1px;
+}
+
+#bookdetailbooktype{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+#bookdetailcost{
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 1%;
+}
+
+#addtocart{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 1%;
+    width: 20%;
+}
+
+#bookquantity{
+    font-size: 15px;
+    padding: 0.5%;
+    width: 10%;
+}

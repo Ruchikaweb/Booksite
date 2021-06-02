@@ -1,13 +1,15 @@
 import React from 'react';
 import Header from '../header/header'
 import Footer from '../footer/footer'
+import {Link} from 'react-router-dom'
 import '../Home/home.css'
 const Home = ()=> {
-    return( 
+    return(  
         <>
          <Header/> 
         <hr/>
         <h1> <center> Most Populer Books</center>  </h1>
+        <Link to="bookdetail/:id" > 
             <div className="maincard  " >
                 <div className="card1">
                         <img src="./images/booo.png" alt="Max"  className="Img"/>
@@ -26,6 +28,8 @@ const Home = ()=> {
                     </div>        
                 </div>
             </div>
+         </Link>
+           
             <div className="maincard  " >
                 <div className="card1">
                         <img src="./images/booo.png" alt="Max"  className="Img"/>
@@ -97,7 +101,7 @@ const Home = ()=> {
                 </div>
             </div> 
             <div className="comtainer"> 
-                <div className="btn btn-success" ><a href="/booktype"> see more</a></div>  
+                <div className="btn btn-success" id="seemorebtn"><a href="/booktype"> see more</a></div>  
             </div>
             <center><hr style={{width:'25%'}}/> </center> 
             <div class="container-fluid homepanel">

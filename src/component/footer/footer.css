@@ -5,3 +5,10 @@
     font-weight: bold;
     padding: 3%;
 } 
+
+#istyel{
+    mAX-width: 35px;
+    max-height: 35px;
+    /* color: rgb(0, 217, 255); */
+    background-color: white;
+}

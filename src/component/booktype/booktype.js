@@ -12,7 +12,7 @@ class Booktype extends React.Component{
                         <input type ="button" className="searchbutton" value="Search"/>
                         <Link to="/request">  <h3 className="placerequestheading"> Cann't Find Books?  <b>Click To Request. </b>  </h3> </Link>
                        
-                    </center>
+                    </center> 
                 </div>
                 <h1> <center>Available Books</center>  </h1>
                 <div> 
@@ -39,6 +39,7 @@ class Booktype extends React.Component{
                         </div>
                     </div> 
                     <div className=" col-sm-8">
+                        <Link to="/bookdetail/:id">
                         <div className="maincard">
                             <div className="card1">
                                 <img src="./images/booo.png" alt="Max"  className="Img"/>
@@ -49,6 +50,8 @@ class Booktype extends React.Component{
                                 </div>        
                             </div>
                         </div> 
+                        </Link>
+                      
                         <div className="maincard">
                             <div className="card1">
                                 <img src="./images/booo.png" alt="Max"  className="Img"/>

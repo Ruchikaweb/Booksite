@@ -1,4 +1,6 @@
 import React from 'react' ;
+import {Link} from 'react-router-dom'
+// import Header2 from '../header/header2'
 import '../sellsbbook/sell.css'
 class sells extends React.Component{
     constructor(){
@@ -7,15 +9,16 @@ class sells extends React.Component{
     render(){
         return(
             <>
-            <div className="requestpageheader"> 
-                <div className="row">
-                    <div className="col-md-3 col-sm-3 col-xs-3">
-                        <img className="requestimg" src="./images/Secondhandbook.png" alt="wrong path"/>
-                    </div>
-                    <div className="col-md-6 col-sm-6 col-xs-6">
-                    <p className="requestcontent"> Books are the quietest and most constant of friends; they are the most accessible and wisest of counselors, and the most patient of teachers. </p>
-                    </div>
-                </div>
+            {/* <Header2/> */}
+            
+            <div className="booktypepageheader">  
+                <center>
+                    <h3 className="searchheading"> <u> Search second hand books online </u>  </h3>
+                    <input type="text" className="searchbook" placeholder="Search Books "/>
+                    <input type ="button" className="searchbutton" value="Search"/>
+                    <Link to="/request">  <h3 className="placerequestheading"> Cann't Find Books?  <b>Click To Request. </b>  </h3> </Link>
+                    
+                </center> 
             </div>
             <div style={{textAlign:'center'}}>
                 <h1> Sells Second Books  </h1>
@@ -51,6 +54,17 @@ class sells extends React.Component{
                             <option disabled selected> Select purpose </option>
                             <option> For sell </option>
                             <option> For Donate  </option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Booktype</label>
+                        <select style={{fontSize:'20px'}} class="form-control" id="sel1">
+                            <option disabled selected> Select purpose </option>
+                            <option> School book </option>
+                            <option> College book  </option>
+                            <option> Compitation book </option>
+                            <option> Other </option>
 
                         </select>
                     </div>

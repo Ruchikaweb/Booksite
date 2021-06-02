@@ -1,0 +1,48 @@
+/* .signuphead{
+    border: 2px solid black;
+    height: 50%;
+    margin-top: -2%;
+    padding-bottom: 5%;
+} */
+.signupheader{
+    background: linear-gradient(57deg, #00c6a7, #1e4d92);
+    /* background:url("https://www.imagehousing.com/images/2021/05/31/headerimg.jpg");
+    background-size: cover;
+    width:100%;
+   max-height: 100%; 
+    
+    padding: 20px; */
+    /* padding-top:10px;
+    padding-bottom: 40px; */
+}
+
+.nav-tabs li a{
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    align-content: center;
+}
+
+.nav-tabs{
+    display:flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+#signupform{
+    border: 12px solid rgb(107, 95, 95);
+    background-color: rgb(245, 238, 238);
+    padding: 2%;
+}
+
+#forgetpwd{
+    color: orange;
+    margin-left: 2%;
+}
+
+#loginbtn{
+    font-size: 20px;
+    margin-left: 40%;
+}

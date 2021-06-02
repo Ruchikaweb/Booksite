@@ -28,8 +28,8 @@ class Navbar extends React.Component{
                         <li><a href="#">Hi username</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li><Link to="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</Link></li>
+                        <li><Link to="/login"><span class="glyphicon glyphicon-log-in"></span> Login</Link></li>
                         {/* //after login// */}
                         <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                     </ul>
