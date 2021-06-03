@@ -1,12 +1,14 @@
 import React from 'react' 
+import Navbar from '../navbar/nav'
 import '../Request/Request.css'
 class Request extends React .Component{
     constructor(){
         super()
-    }
-    render(){
+    } 
+    render(){ 
         return(
             <>
+            <Navbar/>
             <div className="requestpageheader"> 
                 <div className="row">
                     <div className="col-md-3 col-sm-3 col-xs-3">

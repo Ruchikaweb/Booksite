@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../navbar/nav'
 import Header from '../header/header'
 import Footer from '../footer/footer'
 import {Link} from 'react-router-dom'
@@ -6,6 +7,7 @@ import '../Home/home.css'
 const Home = ()=> {
     return(  
         <>
+        <Navbar/>
          <Header/> 
         <hr/>
         <h1> <center> Most Populer Books</center>  </h1>
@@ -126,16 +128,16 @@ const Home = ()=> {
             <hr/>
             <div>
                 <center>  <h1> Book online: Deals on second hand books. </h1> </center>
-                <div className="container ">
-                    <div>
+                <div className="row">
+                    <div id="sellonlinebook" className="col-md-4 col-xs-4">
                         <img id="serviceimgg" src="./images/ser.jpg" alt="wrong"/>
-                        <h2> Second hand book online </h2>
-                        <h3> Cash On Delivery </h3>
+                        <h2 style={{textAlign:'center'}}> Second hand book online </h2>
+                        <h3 className="homepageadd"> Cash On Delivery </h3>
                     </div>
-                    <div>
-                        <img id="serviceimgg" src="./images/ser.jpg" alt="wrong"/>
-                        <h2> Second hand book online </h2>
-                        <h3> Cash On Delivery </h3>
+                    <div id="sellonlinebook2" className="col-md-4 col-xs-4">
+                        <img id="serviceimggg" src="./images/gu.jpg" alt="wrong"/>
+                        <h2 style={{textAlign:'center'}}> Used Competative Books </h2>
+                        <h3 className="homepageadd" style={{textAlign:'center'}}> GATE,ESE,UPSE Books Save Upto 70% </h3>
                     </div>
                 </div>
             </div>

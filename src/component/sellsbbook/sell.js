@@ -1,5 +1,6 @@
 import React from 'react' ;
 import {Link} from 'react-router-dom'
+import Navbar from '../navbar/nav'
 // import Header2 from '../header/header2'
 import '../sellsbbook/sell.css'
 class sells extends React.Component{
@@ -9,6 +10,7 @@ class sells extends React.Component{
     render(){
         return(
             <>
+            <Navbar/>
             {/* <Header2/> */}
             
             <div className="booktypepageheader">  

@@ -1,10 +1,12 @@
 import React from 'react';
 import '../booktype/booktype.css'
+import Navbar from '../navbar/nav'
 import {Link} from 'react-router-dom'
 class Booktype extends React.Component{
     render(){
         return(
             <>
+            <Navbar/>
                 <div className="booktypepageheader">  
                     <center>
                         <h3 className="searchheading"> <u> Search second hand books online </u>  </h3>
