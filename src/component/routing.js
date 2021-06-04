@@ -3,6 +3,7 @@ import {BrowserRouter,Route} from 'react-router-dom'
 import Home from '../component/Home/home'
 import sells from '../component/sellsbbook/sell'
 import Booktype from '../component/booktype/booktype'
+import Donatebook from '../component/Donatebooks/Donatebook'
 import Bookdetail from '../component/bookdetails/Bookdetail'
 import Request from '../component/Request/Request'
 import Signup from '../component/Logindetails/signup'
@@ -18,6 +19,7 @@ const Routing = () => {
             <Route  path ='/sells' component={sells}/> 
             <Route exact path ='/booktype' component={Booktype}/>
             <Route path="/bookdetail/:id" component={Bookdetail}/>
+            <Route path="/donatebooks" component={Donatebook}/>
             <Route path ='/request' component={Request}/>
             <Route path='/signup' component={Signup}/>
             <Route path="/login" component={Login}/>

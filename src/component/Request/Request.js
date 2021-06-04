@@ -9,7 +9,8 @@ class Request extends React .Component{
         return(
             <>
             <Navbar/>
-            <div className="requestpageheader"> 
+            <img style={{marginTop:'-2%'}} id="adminheaderimg" src="./images/headerimg.jpg" alt="wrong"/>
+            {/* <div className="requestpageheader"> 
                 <div className="row">
                     <div className="col-md-3 col-sm-3 col-xs-3">
                         <img className="requestimg" src="./images/Secondhandbook.png" alt="wrong path"/>
@@ -18,7 +19,7 @@ class Request extends React .Component{
                     <p className="requestcontent"> Books are the quietest and most constant of friends; they are the most accessible and wisest of counselors, and the most patient of teachers. </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div style={{textAlign:'center'}}>
                 <h1> Request Books You Cannot Find </h1>
                 <p style={{fontSize:'20px'}}> For any specific details call us at. </p>

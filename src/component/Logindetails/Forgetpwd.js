@@ -7,7 +7,8 @@ class Forgetpwd extends React.Component{
     render(){
         return(
             <>
-             <div className="requestpageheader"> 
+              <img id="adminheaderimg" src="./images/headerimg.jpg" alt="wrong"/>
+            {/* <div className="requestpageheader"> 
                 <div className="row">
                     <div className="col-md-3 col-sm-3 col-xs-3">
                         <img className="requestimg" src="./images/Secondhandbook.png" alt="wrong path"/>
@@ -16,7 +17,7 @@ class Forgetpwd extends React.Component{
                     <p className="requestcontent"> Books are the quietest and most constant of friends; they are the most accessible and wisest of counselors, and the most patient of teachers. </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="container">
                 <ul className="nav nav-tabs">
                     <li><Link to={'/'}>Home</Link></li>

@@ -22,7 +22,7 @@ class Navbar extends React.Component{
                         <li><Link to="/"> Home </Link></li>
                         <li><Link to="/sells"> Sells Book </Link></li>
                         <li><Link to="/booktype"> Book Type</Link> </li>
-                        <li><a href="#">Donate Books</a></li>
+                        <li><Link to="/donatebooks">Donate Books</Link></li>
                         {/* //after login// */}
                         <li><a href="#"> MY Books</a></li>
                         <li><a href="#">Hi username</a></li>
