@@ -62,7 +62,7 @@ class Request extends React .Component{
                     </div>
                     <button type="submit" id="requestbtn" class="btn btn-info">Submit</button>
                 </form>
-            </div>
+            </div> 
             </>
         )
     }

@@ -1,4 +1,32 @@
 #adminheaderimg{
     width: 100%;
+}
+
+/* //Alluerpage// */
+
+.allusercard{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    width: fit-content;
+    margin-left: 30%;
+    margin-top: 4%;
+    padding: 1%;
+}
+
+.allusercardd{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    width: fit-content;
+    margin-left: 5%;
+    margin-top: 4%;
+    padding: 1%;
     
 }
+
+
+
+

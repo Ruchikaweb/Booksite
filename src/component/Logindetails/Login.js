@@ -30,7 +30,7 @@ class Login extends React.Component{
 
             <div className="container">
             <form id="signupform" style={{fontSize:'19px'}}> 
-            <center> <h2> Sign Up Page </h2> </center> 
+            <center> <h2> Login Page </h2> </center> 
                     <div class="form-group">
                         <label >Email address:</label>
                         <input type="email" class="form-control" placeholder="Enter Email"  required autoComplete="off" id="email"/>
