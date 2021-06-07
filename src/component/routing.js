@@ -5,6 +5,7 @@ import sells from '../component/sellsbbook/sell'
 import Booktype from '../component/booktype/booktype'
 import Donatebook from '../component/Donatebooks/Donatebook'
 import Bookdetail from '../component/bookdetails/Bookdetail'
+import Card from  '../component/Mycard/Card'
 import Request from '../component/Request/Request'
 import Signup from '../component/Logindetails/signup'
 import Login from '../component/Logindetails/Login'
@@ -29,6 +30,7 @@ const Routing = () => {
             <Route exact path ='/booktype' component={Booktype}/>
             <Route path="/bookdetail/:id" component={Bookdetail}/>
             <Route path="/donatebooks" component={Donatebook}/>
+            <Route path="/my_card" component={Card}/>
             <Route path ='/request' component={Request}/>
             <Route path='/signup' component={Signup}/>
             <Route path="/login" component={Login}/>

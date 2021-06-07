@@ -52,7 +52,8 @@ class Bookdetail extends React.Component{
                         <input id="bookquantity" type="number"  name="quantity" min="1" />
                     </div>
                     <div style={{marginBottom:'2%'}}> 
-                        <button id="addtocart" type="button" className="btn btn-danger">  Add to cart </button>
+                    <Link to="/my_card">
+                        <button id="addtocart" type="button" className="btn btn-danger">  Add to cart </button> </Link>
                         <button  id="addtocart" style={{marginLeft:'1%'}}type="button" className="btn btn-danger"> Buy now </button>
                     </div>
                 </div>
