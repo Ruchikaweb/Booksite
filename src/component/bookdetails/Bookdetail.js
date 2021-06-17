@@ -49,7 +49,7 @@ class Bookdetail extends React.Component{
                     </div>
                     <div style={{marginBottom:'2%'}}> 
                         <span id="bookdetailbooktype"> Quantity: </span>
-                        <input id="bookquantity" type="number"  name="quantity" min="1" />
+                        <input id="bookquantity" placeholder="0" type="number"  name="quantity" min="1" />
                     </div>
                     <div style={{marginBottom:'2%'}}> 
                     <Link to="/my_card">
@@ -57,7 +57,7 @@ class Bookdetail extends React.Component{
                         <button  id="addtocart" style={{marginLeft:'1%'}}type="button" className="btn btn-danger"> Buy now </button>
                     </div>
                 </div>
-            </div>
+            </div> 
             <hr id="hrset"/>
             <div className="container">
                 <h1> Description of product </h1>

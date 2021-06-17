@@ -30,7 +30,7 @@ class Adminnavbar extends React.Component{
                         <li><Link to={'/out_of_stock'}>Out Of Stocks</Link> </li> 
                         </ul>
                     </li>
-                        <li><Link to={'/book_order'}> Book Ordere</Link> </li> 
+                        <li><Link to={'/book_order'}> Book Orders</Link> </li> 
                         <li><Link to={'/book_request'}>User Request </Link> </li>
                         <li><Link to={'/donate_book_request'}>Donating Book Request </Link> </li>
                         <li><Link to={'/all_subscribes'}>Subscribes List</Link> </li>
