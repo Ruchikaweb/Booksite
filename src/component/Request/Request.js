@@ -7,8 +7,8 @@ class Request extends React.Component{
     constructor(){
         super()
         this.state={
-            name:'',
-            number:'',
+            name:'', 
+            mobileno:'',
             email:'',
             bookname:'',
             author:'',
@@ -29,7 +29,7 @@ class Request extends React.Component{
                 },
                 body:JSON.stringify({
                     name:this.state.name,
-                    number:this.state.number,
+                    mobileno:this.state.mobileno,
                     email:this.state.email,
                     bookname:this.state.bookname,
                     author:this.state.author,
@@ -38,7 +38,7 @@ class Request extends React.Component{
                     image:this.state.image,
                 }) 
             })
-            .then(this.props.history.push('/admin_login'))
+            .then(this.props.history.push('/'))
     }
  
     handelchange=(event)=>{
@@ -65,7 +65,7 @@ class Request extends React.Component{
                     </div>
                     <div class="form-group">
                         <label>Mobile</label>
-                        <input type="number" class="form-control"  placeholder="Enter your number" required autoComplete="off" name="number" value={this.state.number} onChange={this.handelchange}/>
+                        <input type="number" class="form-control"  placeholder="Enter your number" required autoComplete="off" name="mobileno" value={this.state.mobileno} onChange={this.handelchange}/>
                     </div>
                     <div class="form-group">
                         <label >Email address:</label>
