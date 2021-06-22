@@ -24,9 +24,10 @@ class Adminnavbar extends React.Component{
                         </ul> 
                     </li> 
                     <li class="dropdown">
-                        <Link class="dropdown-toggle" data-toggle="dropdown" >Collections<span class="caret"></span></Link> 
+                        <Link class="dropdown-toggle" data-toggle="dropdown" >Collections<span class="caret"></span></Link>  
                         <ul class="dropdown-menu">
-                        <li><Link to={'/all_collections'}>Available Books</Link> </li>
+                        <li><Link to={'/all_collections'}>Available Books for sell</Link> </li>
+                        <li><Link to={'/all_collections'}>Available Books for donation</Link> </li>
                         <li><Link to={'/out_of_stock'}>Out Of Stocks</Link> </li> 
                         </ul>
                     </li>

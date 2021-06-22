@@ -27,6 +27,10 @@
 }
 
 
+#bookloader{
+    width: 100%;
+}
+
 /* @media screen  and (min-width:200px) and (max-width:620px) {
     .allusercard{
         margin-left: 5%;

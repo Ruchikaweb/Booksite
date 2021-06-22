@@ -37,7 +37,7 @@ class Request extends React.Component{
                     otherdetails:this.state.otherdetails,
                     image:this.state.image,
                 }) 
-            })
+            }) 
             .then(this.props.history.push('/'))
     }
  
@@ -76,7 +76,7 @@ class Request extends React.Component{
                         <input type="text" class="form-control"  placeholder="Enter Book name" required autoComplete="off" name="bookname" value={this.state.bookname} onChange={this.handelchange}/>
                     </div>
                     <div class="form-group">
-                        <label>Author or other details</label>
+                        <label>Author</label>
                         <input type="text" class="form-control"  placeholder="Enter details" required autoComplete="off" name="author" value={this.state.author} onChange={this.handelchange}/>
                     </div>
                     <div class="form-group">
