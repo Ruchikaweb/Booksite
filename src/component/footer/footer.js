@@ -13,7 +13,7 @@ const Footer = ()=>{
                             <p> E-mail : ruchikanikita94135@gmail.com </p>
                             <a href="https://www.linkedin.com/in/ruchika-agarwal-51a2841bb/" target="_blank"> <img src="./images/in logo.png" id="istyel" alt="inlogo"/> </a>
                             <a href="https://github.com/Ruchikaweb" target="_blank"> <img src="./images/git logo.png" id="istyel" alt="gitlog"/> </a> 
-                            <a href="https://www.instagram.com/ruchika_389/" target="_blank"> <img src="./images/git logo.png" id="istyel" alt="gitlog"/> </a> 
+                            <a href="https://www.instagram.com/ruchika_389/" target="_blank"> <img src="./images/instalogo.jpg" id="istyel" alt="gitlog"/> </a> 
                         </footer>
                     </div> 
                 </div> <br/>

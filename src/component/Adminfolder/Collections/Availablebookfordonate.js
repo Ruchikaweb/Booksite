@@ -1,7 +1,7 @@
 import React from 'react'
 import  Adminnavbar from '../adminnav'
 import '../admin.css'
-class Allcollections extends React.Component{
+class Availablebookfordonate extends React.Component{
     constructor(){
         super(
 
@@ -79,4 +79,4 @@ class Allcollections extends React.Component{
     }
 }
 
-export default Allcollections ;
+export default Availablebookfordonate ;

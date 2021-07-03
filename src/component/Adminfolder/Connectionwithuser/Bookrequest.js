@@ -21,7 +21,7 @@ const Bookrequest =(props) =>{
         else{
             return(
                 <div>
-                    <img id="bookloader" src="/images/loader.gif"/>
+                    <img  src="/images/loader.gif"/>
                 </div>
             )
         }

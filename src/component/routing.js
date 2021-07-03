@@ -16,6 +16,7 @@ import Alluser from '../component/Adminfolder/users/Alluser'
 import Activeuser from '../component/Adminfolder/users/Activeuser'
 import Blockuser from '../component/Adminfolder/users/Blockuser'
 import Allcollections from '../component/Adminfolder/Collections/Allcollections'
+import Availablebookfordonate from'../component/Adminfolder/Collections/Availablebookfordonate'
 import Outofstockbook from '../component/Adminfolder/Collections/Outofstockbooks'
 import Bookorder from '../component/Adminfolder/Connectionwithuser/Bookorder'
 import Bookrequestapi from '../component/Adminfolder/Bookrequestapi'
@@ -41,6 +42,7 @@ const Routing = () => {
             <Route path="/active_users" component={Activeuser}/>
             <Route path="/blocked_users" component={Blockuser}/>
             <Route path="/all_collections" component={Allcollections}/>
+            <Route path="/Donate_available_books" component={Availablebookfordonate}/>
             <Route path="/out_of_stock" component={Outofstockbook}/>
             <Route path="/book_order" component={Bookorder}/>
             <Route path="/book_request" component={Bookrequestapi}/>
