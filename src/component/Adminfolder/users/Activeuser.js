@@ -1,53 +1,53 @@
 import React from 'react'
 import  Adminnavbar from '../adminnav'
 import '../admin.css'
-class Activeuser extends React.Component{
-    constructor(){
-        super(
-
-        )
-    } 
-    render(){
+const Activeuser =(props) =>{
+    const Activeuserlist =({Actuse})=>{
+        if(Actuse){
+            return Actuse.map((item) => {
+                return(
+                  <React.Fragment>
+                      <div className="col-md-4">
+                        <div class="panel panel-default"  height="300px" width="300px">
+                            <div class="panel-heading"> <center> User_Info </center>  </div>
+                            <div class="panel-body">
+                            <center>
+                                <p>Name :<span>{item.name}</span></p>
+                                <p>Contact:<span> {item.mobileno} </span></p>
+                                <p>Email:<span>{item.email}</span></p>
+                                <p>Activity:<span> True </span> </p>
+                                <button className="btn btn-danger" > Blocked </button>
+                            </center>
+                            </div> 
+                        </div> 
+                        </div>
+                        
+                  </React.Fragment>
+                )
+            })
+        } 
+        else{
+            return(
+                <div>
+                    <img  src="/images/loader.gif"/>
+                </div>
+            )
+        }
+    }
+    
         return(
             <>
                 <img id="adminheaderimg" src="./images/headerimg.jpg" alt="wrong"/>
                 <Adminnavbar/>
                 <h1> <center> <b> <u>  Active User List </u> </b> </center>  </h1>
-                <div className="row">
-                    <div style={{marginLeft:'25%'}} id="activeusercontent" className="col-lg-6 col-md-6 col-sm-12">
-                        <p>Name :<span>Ruchika</span></p>
-                        <p>Contact:<span> 1234567890 </span></p>
-                        <p>Email:<span>ruchika@gmail.com</span></p>
-                        <p>Activity:<span>True</span></p>
-                        <button className="btn btn-danger"> Blocked </button>
-                    </div> 
-                    <div style={{marginLeft:'5%'}} id="activeusercontent" className="col-lg-6 col-md-6 col-sm-12">
-                        <p>Name :<span>Ruchika</span></p>
-                        <p>Contact:<span> 1234567890 </span></p>
-                        <p>Email:<span>ruchika@gmail.com</span></p>
-                        <p>Activity:<span>True</span></p>
-                        <button className="btn btn-danger" > Blocked </button>
-                    </div> 
-                </div>
-                <div className="row">
-                    <div style={{marginLeft:'25%'}} id="activeusercontent" className="col-lg-6 col-md-6 col-sm-12">
-                        <p>Name :<span>Ruchika</span></p>
-                        <p>Contact:<span> 1234567890 </span></p>
-                        <p>Email:<span>ruchika@gmail.com</span></p>
-                        <p>Activity:<span>True</span></p>
-                        <button className="btn btn-danger" > Blocked </button>
-                    </div> 
-                    <div style={{marginLeft:'5%'}} id="activeusercontent" className="col-lg-6 col-md-6 col-sm-12">
-                        <p>Name :<span>Ruchika</span></p>
-                        <p>Contact:<span> 1234567890 </span></p>
-                        <p>Email:<span>ruchika@gmail.com</span></p>
-                        <p>Activity:<span>True</span></p>
-                        <button className="btn btn-danger" > Blocked </button>
-                    </div> 
+                <div className="container">
+                    <div class="row"  style={{fontSize:'20px'}}>
+                        {Activeuserlist(props)}
+                    </div>
                 </div>
             </>
         )
     }
-}
+
 
 export default Activeuser ;

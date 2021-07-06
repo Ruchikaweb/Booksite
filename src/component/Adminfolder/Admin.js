@@ -12,7 +12,7 @@ class Admin extends React.Component{
             <>
             <img id="adminheaderimg" src="./images/headerimg.jpg" alt="wrong"/>
             <Adminnavbar/>
-                <h1> Admin panel </h1>
+                {/* <h1> Admin panel </h1> */}
             </>
         )
     }

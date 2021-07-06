@@ -2,11 +2,11 @@ import React from 'react' ;
 import {Link} from 'react-router-dom'
 import Navbar from '../navbar/nav'
 import '../sellsbbook/sell.css'
-const Url="https://no1book-app.herokuapp.com/post_books";
+const Url="https://no1book-app.herokuapp.com/post_books"; 
 class sells extends React.Component{
     constructor(){
         super()
-        this.state={
+        this.state={     
             name:'', 
             mobileno:'',
             email:'',

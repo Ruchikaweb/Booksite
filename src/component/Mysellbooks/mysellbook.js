@@ -1,18 +1,17 @@
 import React from 'react' 
 import Navbar from '../navbar/nav'
-class Card extends React.Component{
+class Mysellbook extends React.Component{
     constructor(){
         super()
-    } 
+    }
     render(){
         return(
             <>
-                 <Navbar/>
+                <Navbar/>
                 <img style={{marginTop:'-2%'}} id="adminheaderimg" src="./images/headerimg.jpg" alt="wrong"/>
-                <h1> <center> <b> <u> My card Details </u> </b> </center>  </h1>
+                <h1> <center> <b> <u> My Sells Books </u> </b> </center>  </h1>
                 <div className="container">
                 <div class="row">
-                {/* <h2>Panel Heading</h2> */}
                     <div className="col-md-4">
                     <div class="panel panel-default"  height="300px" width="300px">
                         <div class="panel-heading"><img src="./images/booo.png" height="150px" width="300px"  alt="Max"/></div>
@@ -22,7 +21,7 @@ class Card extends React.Component{
                             <span> <b> ₹ 200.00 </b> </span>
                             <span id="bookdetailcost"> ₹ 500.00 </span>
                             <button  style={{marginLeft:'1%'}}type="button" className="btn btn-danger"> 60% Off </button> <br/> <br/>
-                            <div className="btn btn-danger"> Buy Now </div>  
+                            <div className="btn btn-danger"> Out of stock </div>  
                             </center>
                         </div>
                     </div>
@@ -36,7 +35,7 @@ class Card extends React.Component{
                             <span> <b> ₹ 200.00 </b> </span>
                             <span id="bookdetailcost"> ₹ 500.00 </span>
                             <button  style={{marginLeft:'1%'}}type="button" className="btn btn-danger"> 60% Off </button> <br/> <br/>
-                            <div className="btn btn-danger"> Buy Now </div>  
+                            <div className="btn btn-danger"> Out of stock </div>  
                             </center>
                         </div>
                     </div>
@@ -50,7 +49,7 @@ class Card extends React.Component{
                             <span> <b> ₹ 200.00 </b> </span>
                             <span id="bookdetailcost"> ₹ 500.00 </span>
                             <button  style={{marginLeft:'1%'}}type="button" className="btn btn-danger"> 60% Off </button> <br/> <br/>
-                            <div className="btn btn-danger"> Buy Now </div>  
+                            <div className="btn btn-danger"> Out of stock </div>  
                             </center>
                         </div>
                     </div>
@@ -64,7 +63,7 @@ class Card extends React.Component{
                             <span> <b> ₹ 200.00 </b> </span>
                             <span id="bookdetailcost"> ₹ 500.00 </span>
                             <button  style={{marginLeft:'1%'}}type="button" className="btn btn-danger"> 60% Off </button> <br/> <br/>
-                            <div className="btn btn-danger"> Buy Now </div>  
+                            <div className="btn btn-danger"> Out of stock </div>  
                             </center>
                         </div>
                     </div>
@@ -76,4 +75,4 @@ class Card extends React.Component{
     }
 }
 
-export default Card ;
+export default Mysellbook ;
