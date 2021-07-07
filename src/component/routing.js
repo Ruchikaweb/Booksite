@@ -22,7 +22,7 @@ import Outofstockbook from '../component/Adminfolder/Collections/Outofstockbooks
 import Bookorder from '../component/Adminfolder/Connectionwithuser/Bookorder'
 import Bookrequestapi from '../component/Adminfolder/Bookrequestapi'
 import Donatereqapi from '../component/Adminfolder/Donatereqapi'
-import Subscriberlist  from '../component/Adminfolder/Connectionwithuser/Subscriberlist'
+import Subscriberlistapi  from '../component/Adminfolder/Connectionwithuser/Subscriberlistapi'
 const Routing = () => {
     return(
        
@@ -49,7 +49,7 @@ const Routing = () => {
             <Route path="/book_order" component={Bookorder}/>
             <Route path="/book_request" component={Bookrequestapi}/>
             <Route path="/donate_book_request" component={Donatereqapi}/>
-            <Route path="/all_subscribes" component={Subscriberlist}/>
+            <Route path="/all_subscribes" component={Subscriberlistapi}/>
         </BrowserRouter>
         
     )

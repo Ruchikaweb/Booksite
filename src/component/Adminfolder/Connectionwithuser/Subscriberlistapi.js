@@ -1,19 +1,19 @@
 import React from 'react';
-import Activeuser from '../users/Activeuser'
+import Subscriberlist  from '../Connectionwithuser/Subscriberlist'
 const url="https://no1book-app.herokuapp.com/all_subscriber";
 
-class Activeuserapi extends React.Component{
+class Subscriberlistapi extends React.Component{
     constructor(){
         super()
 
         this.state={
             request:''
         }
-    }  
+    } 
     render(){
         return(
             <React.Fragment> 
-                <Activeuser Actuse={this.state.request}/>
+                <Subscriberlist slist={this.state.request}/>
             </React.Fragment>
         )
     }
@@ -21,10 +21,10 @@ class Activeuserapi extends React.Component{
     componentDidMount(){
         fetch(url,{method:'GET'})
         .then((res) => res.json())
-        .then((data) => {   
+        .then((data) => {
             this.setState({request:data})
         })
     }
 }
 
-export default Activeuserapi ;
+export default Subscriberlistapi ;

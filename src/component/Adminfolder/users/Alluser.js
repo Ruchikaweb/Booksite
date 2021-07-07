@@ -16,7 +16,7 @@ const Alluser =(props) =>{
                                 <p>Name :<span>{item.name}</span></p>
                                 <p>Contact:<span> {item.mobileno} </span></p>
                                 <p>Email:<span>{item.email}</span></p>
-                                <button className="btn btn-danger" > Blocked </button>
+                                {/* <button className="btn btn-danger" > Blocked </button> */}
                             </center>
                             </div> 
                         </div> 
@@ -34,7 +34,7 @@ const Alluser =(props) =>{
             )
         }
     }
-
+ 
         return( 
             <>
             <img id="adminheaderimg" src="./images/headerimg.jpg" alt="wrong"/>
