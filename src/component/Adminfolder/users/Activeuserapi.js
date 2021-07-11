@@ -1,6 +1,6 @@
 import React from 'react';
 import Activeuser from '../users/Activeuser'
-const url="https://no1book-app.herokuapp.com/all_subscriber";
+const url="https://no1book-app.herokuapp.com/available_subscriber";
 
 class Activeuserapi extends React.Component{
     constructor(){

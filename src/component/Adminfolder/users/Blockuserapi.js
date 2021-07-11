@@ -1,6 +1,6 @@
 import React from 'react';
 import Blockuser from '../users/Blockuser'
-const url="https://no1book-app.herokuapp.com/all_subscriber";
+const url="https://no1book-app.herokuapp.com/out_of_stock_subscriber";
 
 class Blockuserapi extends React.Component{
     constructor(){

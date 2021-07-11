@@ -13,8 +13,9 @@ class Signup extends React.Component{
             password:'',
             conformpassword:'',
             selectquestion:'',
-            answer:''
-        }
+            answer:'',
+            isActive:true
+        } 
     } 
 
     handelsubmit = () => {
@@ -22,16 +23,21 @@ class Signup extends React.Component{
             alert("All filds are required")
         } else{ 
             if(this.state.mobileno.length==10){
-                fetch(Url,
-                    {
-                        method:'POST',
-                        headers:{
-                            'Accept':'application/json',
-                            'Content-Type':'application/json'
-                        },
-                        body:JSON.stringify(this.state)
-                    })
-                    .then(this.props.history.push('/'))
+                if((this.state.password===this.state.conformpassword)&&(this.state.password.length>=8 &&this.state.password.length<=16)){
+                    fetch(Url,
+                        { 
+                            method:'POST',
+                            headers:{
+                                'Accept':'application/json',
+                                'Content-Type':'application/json'
+                            },
+                            body:JSON.stringify(this.state)
+                        })
+                        .then(this.props.history.push('/'))
+                }else{
+                    alert("Reccheck password")
+                }
+                
             } else{
                 alert("Enter right phone no")
             }

@@ -3,7 +3,7 @@ import  Adminnavbar from '../adminnav'
 import '../admin.css'
 
 const Alluser =(props) =>{
-    const Alluserlist =({Aluse})=>{
+    const Alluserlist =({Aluse})=>{ 
         if(Aluse){
             return Aluse.map((item) => {
                 return(
@@ -21,7 +21,6 @@ const Alluser =(props) =>{
                             </div> 
                         </div> 
                         </div>
-                        
                   </React.Fragment>
                 )
             })

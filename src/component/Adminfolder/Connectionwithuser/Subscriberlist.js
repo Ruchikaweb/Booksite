@@ -3,19 +3,22 @@ import  Adminnavbar from '../adminnav'
 import '../admin.css' 
 
 const Subscriberlist =(props)=>{
+
     const SSlist =({slist})=>{
-        if(slist){
+        if(slist){ 
+            sessionStorage.setItem("subscriberno", slist.length);
             return slist.map((item)=>{
                 return(
                     <React.Fragment>
+                        
                        <div className="subscriberlist">
                             <p> {item.email} </p>
-                        </div>
+                        </div> 
                     </React.Fragment>
                 )
-            })
-        }
-        else{
+            }) 
+        } 
+        else{  
             return(
                 <div>
                     <img  src="/images/loader.gif"/>
@@ -29,7 +32,7 @@ const Subscriberlist =(props)=>{
                 <img id="adminheaderimg" src="./images/headerimg.jpg" alt="wrong"/>
                 <Adminnavbar/>
                 <h1> <center> <b> <u> All Subscriber </u> </b> </center>  </h1>
-                <div id="totalsubscriber"> <span> Total Subscriber </span> 5 <span>  </span>  </div>
+                <div id="totalsubscriber"> <span> Total Subscriber </span> {sessionStorage.getItem("subscriberno")} <span>  </span>  </div>
                 
                     {SSlist(props)} 
             </>

@@ -24,7 +24,7 @@ class Subscriberlistapi extends React.Component{
         .then((data) => {
             this.setState({request:data})
         })
-    }
+    } 
 }
 
 export default Subscriberlistapi ;

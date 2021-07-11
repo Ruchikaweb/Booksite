@@ -1,23 +1,25 @@
 import React from 'react'
 import  Adminnavbar from '../adminnav'
+import {Link} from 'react-router-dom'
 import '../admin.css'
 const Activeuser =(props) =>{
     const Activeuserlist =({Actuse})=>{
         if(Actuse){
-            return Actuse.map((item) => {
+            return Actuse.map((item) => {  
                 return(
                   <React.Fragment>
                       <div className="col-md-4">
                         <div class="panel panel-default"  height="300px" width="300px">
                             <div class="panel-heading"> <center> User_Info </center>  </div>
                             <div class="panel-body">
-                            <center>
+                            <center> 
                                 <p>Name :<span>{item.name}</span></p>
                                 <p>Contact:<span> {item.mobileno} </span></p>
-                                <p>Email:<span>{item.email}</span></p>
+                                <p>Email:<span>{item.email}</span></p> 
                                 <p>Activity:<span> True </span> </p>
-                                <button className="btn btn-danger" > Blocked </button>
-                            </center>
+                                <Link to={`/blocked/${item._id}`}> 
+                                <button className="btn btn-danger"> Blocked </button>  </Link>
+                            </center> 
                             </div> 
                         </div> 
                         </div>
