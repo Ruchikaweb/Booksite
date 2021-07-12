@@ -1,5 +1,6 @@
 import React from 'react'
 import  Adminnavbar from '../adminnav'
+import {Link} from 'react-router-dom'
 import '../admin.css'
 const Blockuser =(props) =>{
     const Blockuserlist =({Blokuser})=>{
@@ -16,7 +17,10 @@ const Blockuser =(props) =>{
                                 <p>Contact:<span> {item.mobileno} </span></p>
                                 <p>Email:<span>{item.email}</span></p>
                                 <p>Activity:<span> False </span> </p>
-                                <button className="btn btn-danger" > Unblocked </button>
+                                <Link to={`/unblocked/${item._id}`}>
+                                    <button className="btn btn-danger" > Unblocked </button>
+                                </Link>
+                               
                             </center>
                             </div> 
                         </div> 

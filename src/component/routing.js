@@ -16,6 +16,7 @@ import Adminnavbar from '../component/Adminfolder/adminnav'
 import Alluserapi from '../component/Adminfolder/users/Alluserapi'
 import Activeuserapi from '../component/Adminfolder/users/Activeuserapi'
 import Blockuserapi from '../component/Adminfolder/users/Blockuserapi'
+import Reactivateuser from '../component/Adminfolder/users/Reactiveuser'
 import Deactivateuser from '../component/Adminfolder/users/Deactivateuser'
 import Allcollections from '../component/Adminfolder/Collections/Allcollections'
 import Availablebookfordonate from'../component/Adminfolder/Collections/Availablebookfordonate'
@@ -45,6 +46,7 @@ const Routing = () => {
             <Route path="/active_users" component={Activeuserapi}/>
             <Route path="/blocked_users" component={Blockuserapi}/>
             <Route path="/blocked/:id" component={Deactivateuser}/> 
+            <Route path="/unblocked/:id" component={Reactivateuser}/>
             <Route path="/all_collections" component={Allcollections}/>
             <Route path="/Donate_available_books" component={Availablebookfordonate}/>
             <Route path="/out_of_stock" component={Outofstockbook}/>
