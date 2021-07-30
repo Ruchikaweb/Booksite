@@ -3,14 +3,16 @@ import {Link} from 'react-router-dom'
 import Navbar from '../navbar/nav'
 import '../sellsbbook/sell.css'
 const Url="https://no1book-app.herokuapp.com/post_books"; 
+
 class sells extends React.Component{
     constructor(){
-        super()
+        super() 
         this.state={     
             name:'', 
             mobileno:'',
             email:'',
             bookname:'',
+            bookrs:'',
             author:'',
             purpose:'',
             bookcondition:'',
@@ -20,13 +22,15 @@ class sells extends React.Component{
             image:''
         }
     } 
-
-    handelsubmit = () => {
-        if(this.state.name==''||this.state.mobileno ==''||this.state.email ==''||this.state.bookname==''||this.state.author ==''||this.state.purpose ==''||this.state.bookcondition ==''||this.state.booktype==''||this.state.location ==''||this.state.otherdetails ==''||this.state.image ==''){
+      
+    handelsubmit = () => { 
+        alert("We are purchasing your books 40% on MRP rs. other % is included mentainance of book and delivery...Thanku for member of book house..")
+        if(this.state.name==''||this.state.mobileno ==''||this.state.email ==''||this.state.bookname==''||
+        this.state.bookrs ==''||this.state.author ==''||this.state.purpose ==''||this.state.bookcondition ==''||this.state.booktype==''||this.state.location ==''||this.state.otherdetails ==''||this.state.image ==''){ 
             alert("All filds are required")
-        } else{ 
-            if(this.state.mobileno.length==10){
-                fetch(Url,
+        } else{   
+            if(this.state.mobileno.length==10){ 
+                fetch(Url, 
                     {
                         method:'POST',
                         headers:{
@@ -36,12 +40,12 @@ class sells extends React.Component{
                         body:JSON.stringify(this.state)
                     })
                     .then(this.props.history.push('/'))
-            } else{
+            } else{ 
                 alert("Enter right phone no")
             }
         
         }
-    }
+    } 
  
     handelchange=(event)=>{
         this.setState({[event.target.name]:event.target.value})
@@ -84,6 +88,10 @@ class sells extends React.Component{
                         <input type="text" class="form-control"  placeholder="Enter Book name" required autoComplete="off" name="bookname" value={this.state.bookname} onChange={this.handelchange}/>
                     </div>
                     <div class="form-group">
+                        <label>Book Prize</label>
+                        <input type="text" class="form-control"  placeholder="Enter Book original prize" required autoComplete="off" name="bookrs" value={this.state.bookrs} onChange={this.handelchange}/>
+                    </div>
+                    <div class="form-group">
                         <label>Author</label>
                         <input type="text" class="form-control"  placeholder="Enter details" required autoComplete="off" name="author" value={this.state.author} onChange={this.handelchange}/>
                     </div>
@@ -98,23 +106,22 @@ class sells extends React.Component{
                     <div class="form-group">
                         <label>BookCondition</label>
                         <select style={{fontSize:'20px'}} class="form-control" name="bookcondition" value={this.state.bookcondition} onChange={this.handelchange}>
-                            <option selected> Select purpose </option>
+                            <option selected> Select book condition </option>
                             <option> New </option>
                             <option> Old  </option>
                         </select>
-                    </div>
-                    <div class="form-group">
+                    </div> 
+                    <div class="form-group"> 
                         <label>Booktype</label>
                         <select style={{fontSize:'20px'}} class="form-control" name="booktype" value={this.state.booktype} onChange={this.handelchange}>
-                            <option selected > Select purpose </option>
+                            <option selected > Select book type </option>
                             <option> School book </option>
                             <option> College book  </option>
                             <option> Compitation book </option>
                             <option> Other </option>
-
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"> 
                         <label>Location/College</label>
                         <input type="text" class="form-control"  placeholder="Enter location" required autoComplete="off" name="location" value={this.state.location} onChange={this.handelchange}/>
                     </div>
@@ -133,8 +140,5 @@ class sells extends React.Component{
         )
     }
 }
-
     
-
-
-export default sells ;
+export default sells ; 

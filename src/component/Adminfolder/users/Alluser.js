@@ -6,7 +6,7 @@ const Alluser =(props) =>{
     const Alluserlist =({Aluse})=>{ 
         if(Aluse){
             return Aluse.map((item) => {
-                return(
+                return(    
                   <React.Fragment>
                       <div className="col-md-4">
                         <div class="panel panel-default"  height="300px" width="300px">

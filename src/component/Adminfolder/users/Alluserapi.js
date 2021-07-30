@@ -16,7 +16,7 @@ class Alluserapi extends React.Component{
                 <Alluser Aluse={this.state.request}/>
             </React.Fragment>
         )
-    }
+    }   
 
     componentDidMount(){
         fetch(url,{method:'GET'})

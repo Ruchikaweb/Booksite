@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Logindetails/logindetails.css';
 import {Link} from 'react-router-dom'
-const Url="https://no1book-app.herokuapp.com/post_subscriber"; 
+const Url="https://no1book-app.herokuapp.com/post_subscriber";  
 class Signup extends React.Component{
     constructor(){
         super()
@@ -35,7 +35,7 @@ class Signup extends React.Component{
                         })
                         .then(this.props.history.push('/'))
                 }else{
-                    alert("Reccheck password")
+                    alert("Reccheck password password length should be 8 to 16")
                 }
                 
             } else{
@@ -82,11 +82,11 @@ class Signup extends React.Component{
                     </div>
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="number" class="form-control"  placeholder="Enter your password" required autoComplete="off" name="password" value={this.state.password} onChange={this.handelchange}/>
+                        <input type="text" class="form-control"  placeholder="Enter your password" required autoComplete="off" name="password" value={this.state.password} onChange={this.handelchange}/>
                     </div>
                     <div class="form-group"> 
                         <label>conform password</label>
-                        <input type="number" class="form-control"  placeholder="Enter conform password" required autoComplete="off" name="conformpassword" value={this.state.conformpassword} onChange={this.handelchange}/>
+                        <input type="text" class="form-control"  placeholder="Enter conform password" required autoComplete="off" name="conformpassword" value={this.state.conformpassword} onChange={this.handelchange}/>
                     </div>
                     <div className="form-group">
                         <label>Pick Your Security Question:</label>

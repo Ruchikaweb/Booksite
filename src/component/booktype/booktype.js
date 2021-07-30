@@ -42,58 +42,69 @@ class Booktype extends React.Component{
                     </div> 
                     <div className=" col-sm-8">
                         <Link to="/bookdetail/:id">
-                        <div className="maincard">
-                            <div className="card1">
-                                <img src="./images/booo.png" alt="Max"  className="Img"/>
-                                <div class="TextContent">
-                                    <div className="Name">book name</div>
-                                    <div className="btn">Buy Now</div>  
-                                    <div className="btn">Add to Cart</div> 
-                                </div>        
-                            </div>
-                        </div> 
-                        </Link>
-                      
-                        <div className="maincard">
-                            <div className="card1">
-                                <img src="./images/booo.png" alt="Max"  className="Img"/>
-                                <div class="TextContent">
-                                    <div className="Name">book name</div>
-                                    <div className="btn">Buy Now</div>  
-                                    <div className="btn">Add to Cart</div> 
-                                </div>        
-                            </div>
-                        </div>
-                        <div className="maincard">
-                            <div className="card1">
-                                <img src="./images/booo.png" alt="Max"  className="Img"/>
-                                <div class="TextContent">
-                                    <div className="Name">book name</div>
-                                    <div className="btn">Buy Now</div>  
-                                    <div className="btn">Add to Cart</div> 
-                                </div>        
-                            </div>
-                        </div>
-                        <div className="maincard">
-                            <div className="card1">
-                                <img src="./images/booo.png" alt="Max"  className="Img"/>
-                                <div class="TextContent">
-                                    <div className="Name">book name</div>
-                                    <div className="btn">Buy Now</div>  
-                                    <div className="btn">Add to Cart</div> 
-                                </div>        
-                            </div>
-                        </div>
-                        <div className="maincard">
-                            <div className="card1">
-                                <img src="./images/booo.png" alt="Max"  className="Img"/>
-                                <div class="TextContent">
-                                    <div className="Name">book name</div>
-                                    <div className="btn">Buy Now</div>  
-                                    <div className="btn">Add to Cart</div> 
-                                </div>        
-                            </div>
-                        </div>
+                            <div className="row" style={{marginTop:'2%'}}>
+                                <div className="col-md-4">
+                                    <div class="panel panel-default"  height="500px" width="100px">
+                                        <div class="panel-heading"><img src="./images/booo.png" height="200px" width="300px"  alt="Max"/></div>
+                                        <div class="panel-body">
+                                        <h4> <center> <b> Book Name </b> </center>  </h4>
+                                        <center>
+                                        <div id="cardbuybtn" className="btn btn-danger">Buy Now</div>  
+                                        <div id="cardaddbtn" className="btn btn-danger">Add to Cart</div> 
+                                        </center>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div class="panel panel-default"  height="500px" width="100px">
+                                        <div class="panel-heading"><img src="./images/booo.png" height="200px" width="300px"  alt="Max"/></div>
+                                        <div class="panel-body">
+                                        <h4> <center> <b> Book Name </b> </center>  </h4>
+                                        <center>
+                                        <div id="cardbuybtn" className="btn btn-danger">Buy Now</div>  
+                                        <div id="cardaddbtn" className="btn btn-danger">Add to Cart</div> 
+                                        </center>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div class="panel panel-default"  height="500px" width="100px">
+                                        <div class="panel-heading"><img src="./images/booo.png" height="200px" width="300px"  alt="Max"/></div>
+                                        <div class="panel-body">
+                                        <h4> <center> <b> Book Name </b> </center>  </h4>
+                                        <center>
+                                        <div id="cardbuybtn" className="btn btn-danger">Buy Now</div>  
+                                        <div id="cardaddbtn" className="btn btn-danger">Add to Cart</div> 
+                                        </center>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div class="panel panel-default"  height="500px" width="100px">
+                                        <div class="panel-heading"><img src="./images/booo.png" height="200px" width="300px"  alt="Max"/></div>
+                                        <div class="panel-body">
+                                        <h4> <center> <b> Book Name </b> </center>  </h4>
+                                        <center>
+                                        <div id="cardbuybtn" className="btn btn-danger">Buy Now</div>  
+                                        <div id="cardaddbtn" className="btn btn-danger">Add to Cart</div> 
+                                        </center>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div class="panel panel-default"  height="500px" width="100px">
+                                        <div class="panel-heading"><img src="./images/booo.png" height="200px" width="300px"  alt="Max"/></div>
+                                        <div class="panel-body">
+                                        <h4> <center> <b> Book Name </b> </center>  </h4>
+                                        <center>
+                                        <div id="cardbuybtn" className="btn btn-danger">Buy Now</div>  
+                                        <div id="cardaddbtn" className="btn btn-danger">Add to Cart</div> 
+                                        </center>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </Link>                   
                     </div>
                 </div>
                

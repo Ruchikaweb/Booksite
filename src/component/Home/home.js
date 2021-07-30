@@ -6,102 +6,85 @@ import {Link} from 'react-router-dom'
 import '../Home/home.css'
 const Home = ()=> {
     return(  
-        <>
+        <> 
         <Navbar/>
          <Header/> 
-        <hr/>
+        <hr/> 
         <h1> <center> Most Populer Books</center>  </h1>
         <Link to="bookdetail/:id" > 
-            <div className="maincard  " >
-                <div className="card1">
-                        <img src="./images/booo.png" alt="Max"  className="Img"/>
-                    <div class="TextContent">
-                        <div className="Name">book name</div>
-                        <div> 
-                            <span className="mprice"> Rs.My Price </span>
-                            <span className="oprice"> Rs. Original Price </span> 
+        <div className="container">
+                <div class="row">
+                {/* <h2>Panel Heading</h2> */}
+                    <div className="col-md-4">
+                    <div class="panel panel-default"  height="500px" width="100px">
+                        <div class="panel-heading"><img src="./images/booo.png" height="200px" width="300px"  alt="Max"/></div>
+                        <div class="panel-body">
+                            <h4> <center> <b> Book Name </b> </center>  </h4>
+                            <center>
+                            <span> <b> ₹ 200.00 </b> </span>
+                            <span id="bookdetailcost"> ₹ 500.00 </span>
+                            <button  style={{marginLeft:'1%'}}type="button" className="btn btn-danger"> 60% Off </button> <br/> <br/>
+                            <div className="btn btn-danger"> Out of stock </div>  
+                            </center>
                         </div>
-                        <div>
-                            <span className="offer"> 15% OFF </span> 
+                    </div>
+                    </div>
+                    <div className="col-md-4">
+                    <div class="panel panel-default"  height="500px" width="100px">
+                        <div class="panel-heading"><img src="./images/booo.png" height="200px" width="300px"  alt="Max"/></div>
+                        <div class="panel-body">
+                            <h4> <center> <b> Book Name </b> </center>  </h4>
+                            <center>
+                            <span> <b> ₹ 200.00 </b> </span>
+                            <span id="bookdetailcost"> ₹ 500.00 </span>
+                            <button  style={{marginLeft:'1%'}}type="button" className="btn btn-danger"> 60% Off </button> <br/> <br/>
+                            <div className="btn btn-danger"> Out of stock </div>  
+                            </center>
                         </div>
-                       
-                        <div className="btn">Buy Now</div>  
-                        <div className="btn">Add to Cart</div> 
-                    </div>        
+                    </div>
+                    </div>  <div className="col-md-4">
+                    <div class="panel panel-default"  height="500px" width="100px">
+                        <div class="panel-heading"><img src="./images/booo.png" height="200px" width="300px"  alt="Max"/></div>
+                        <div class="panel-body">
+                            <h4> <center> <b> Book Name </b> </center>  </h4>
+                            <center>
+                            <span> <b> ₹ 200.00 </b> </span>
+                            <span id="bookdetailcost"> ₹ 500.00 </span>
+                            <button  style={{marginLeft:'1%'}}type="button" className="btn btn-danger"> 60% Off </button> <br/> <br/>
+                            <div className="btn btn-danger"> Out of stock </div>  
+                            </center>
+                        </div>
+                    </div>
+                    </div>  <div className="col-md-4">
+                    <div class="panel panel-default"  height="500px" width="100px">
+                        <div class="panel-heading"><img src="./images/booo.png" height="200px" width="300px"  alt="Max"/></div>
+                        <div class="panel-body">
+                            <h4> <center> <b> Book Name </b> </center>  </h4>
+                            <center>
+                            <span> <b> ₹ 200.00 </b> </span>
+                            <span id="bookdetailcost"> ₹ 500.00 </span>
+                            <button  style={{marginLeft:'1%'}}type="button" className="btn btn-danger"> 60% Off </button> <br/> <br/>
+                            <div className="btn btn-danger"> Out of stock </div>  
+                            </center>
+                        </div>
+                    </div>
+                    </div>  <div className="col-md-4">
+                    <div class="panel panel-default"  height="500px" width="100px">
+                        <div class="panel-heading"><img src="./images/booo.png" height="200px" width="300px"  alt="Max"/></div>
+                        <div class="panel-body">
+                            <h4> <center> <b> Book Name </b> </center>  </h4>
+                            <center>
+                            <span> <b> ₹ 200.00 </b> </span>
+                            <span id="bookdetailcost"> ₹ 500.00 </span>
+                            <button  style={{marginLeft:'1%'}}type="button" className="btn btn-danger"> 60% Off </button> <br/> <br/>
+                            <div className="btn btn-danger"> Out of stock </div>  
+                            </center>
+                        </div>
+                    </div>
+                    </div> 
                 </div>
-            </div>
+                </div>
          </Link>
-           
-            <div className="maincard  " >
-                <div className="card1">
-                        <img src="./images/booo.png" alt="Max"  className="Img"/>
-                    <div class="TextContent">
-                        <div className="Name">book name</div>
-                        <div className="btn">Buy Now</div>  
-                        <div className="btn">Add to Cart</div> 
-                    </div>        
-                </div>
-            </div>
-            <div className="maincard  " >
-                <div className="card1">
-                        <img src="./images/booo.png" alt="Max"  className="Img"/>
-                    <div class="TextContent">
-                        <div className="Name">book name</div>
-                        <div className="btn">Buy Now</div>  
-                        <div className="btn">Add to Cart</div> 
-                    </div>        
-                </div>
-            </div>
-            <div className="maincard  " >
-                <div className="card1">
-                        <img src="./images/booo.png" alt="Max"  className="Img"/>
-                    <div class="TextContent">
-                        <div className="Name">book name</div>
-                        <div className="btn">Buy Now</div>  
-                        <div className="btn">Add to Cart</div> 
-                    </div>        
-                </div>
-            </div>
-            <div className="maincard  " >
-                <div className="card1">
-                        <img src="./images/booo.png" alt="Max"  className="Img"/>
-                    <div class="TextContent">
-                        <div className="Name">book name</div>
-                        <div className="btn">Buy Now</div>  
-                        <div className="btn">Add to Cart</div> 
-                    </div>        
-                </div>
-            </div>
-            <div className="maincard  " >
-                <div className="card1">
-                        <img src="./images/booo.png" alt="Max"  className="Img"/>
-                    <div class="TextContent">
-                        <div className="Name">book name</div>
-                        <div className="btn">Buy Now</div>  
-                        <div className="btn">Add to Cart</div> 
-                    </div>        
-                </div>
-            </div>
-            <div className="maincard  " >
-                <div className="card1">
-                        <img src="./images/booo.png" alt="Max"  className="Img"/>
-                    <div class="TextContent">
-                        <div className="Name">book name</div>
-                        <div className="btn">Buy Now</div>  
-                        <div className="btn">Add to Cart</div> 
-                    </div>        
-                </div>
-            </div>
-            <div className="maincard  " >
-                <div className="card1">
-                        <img src="./images/booo.png" alt="Max"  className="Img"/>
-                    <div class="TextContent">
-                        <div className="Name">book name</div>
-                        <div className="btn">Buy Now</div>  
-                        <div className="btn">Add to Cart</div> 
-                    </div>        
-                </div>
-            </div> 
             <div className="comtainer"> 
                 <div className="btn btn-success" id="seemorebtn"><a href="/booktype"> see more</a></div>  
             </div>
