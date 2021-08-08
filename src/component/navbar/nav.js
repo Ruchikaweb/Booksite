@@ -26,7 +26,7 @@ class Navbar extends React.Component{
                         {/* //after login// */}
                         <li><Link to="/my_card"> MY Cart books</Link></li>
                         <li><Link to="/my_sells_books"> MY Books</Link></li>
-                        <li><a href="#">Hi username</a></li>
+                        <li><a href="#">Hi {localStorage.getItem("username")} </a></li> 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><Link to="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</Link></li>

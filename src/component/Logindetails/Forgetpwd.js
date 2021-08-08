@@ -20,7 +20,7 @@ class Forgetpwd extends React.Component{
                 'Accept':'application/json',
                 'Content-Type':'application/json'
             },
-            body:JSON.stringify({mobileno:this.state.number,password:this.state.password})
+            body:JSON.stringify({email:this.state.email,selectquestion:this.state.selectquestion,answer:this.state.answer})
         }) 
     
         .then((response)=>{ 
@@ -31,7 +31,7 @@ class Forgetpwd extends React.Component{
                 alert("wrong mobileno and password")
                 }
                 else{
-                    alert("login successful")
+                    console.log(data[0])
                 }
         }
     )
@@ -78,7 +78,7 @@ class Forgetpwd extends React.Component{
                     </div>
                     <div class="form-group">
                         <label>New Password</label>
-                        <input type="number" class="form-control"  placeholder="Enter new password" required autoComplete="off"  name=" newpassword" value={this.state. newpassword} onChange={this.handelchange}/>
+                        <input type="number" class="form-control"  placeholder="Enter new password"  autoComplete="off"  name=" newpassword" value={this.state.newpassword} onChange={this.handelchange}/>
                     </div>
 
                     <button type="submit" id="requestbtn" onClick={this.handelsubmit} class="btn btn-success"> Submit </button>

@@ -14,7 +14,7 @@ const Allcollections =(props)=>{
                                 <h4> <center> <b> {item.bookname} </b> </center>  </h4>
                                 <center>
                                 <span> <b> ₹ {item.bookrs} </b> </span>
-                                <span id="bookdetailcost"> ₹ 500.00 </span>
+                                <span id="bookdetailcost"> ₹ {item.bookrs} 500.00 </span>
                                 <button  style={{marginLeft:'1%'}}type="button" className="btn btn-danger"> 60% Off </button> <br/> <br/>
                                 <div className="btn btn-danger"> Out of stock </div>  
                                 </center>

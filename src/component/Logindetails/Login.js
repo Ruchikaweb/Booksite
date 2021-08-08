@@ -20,7 +20,7 @@ class Login extends React.Component{
                 'Accept':'application/json',
                 'Content-Type':'application/json'
             },
-            body:JSON.stringify({mobileno:this.state.number,password:this.state.password})
+            body:JSON.stringify({mobileno:this.state.mobileno,password:this.state.password})
         }) 
     
         .then((response)=>{ 
@@ -28,10 +28,12 @@ class Login extends React.Component{
     
         .then((data)=>{
             if((data).length===0){
+                console.log(data)
                 alert("wrong mobileno and password")
                 }
                 else{
-                    alert("login successful")
+                   this.props.history.push('/')
+                   localStorage.setItem('username',data[0].name)
                 }
         }
     )
