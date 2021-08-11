@@ -39,9 +39,9 @@ class sells extends React.Component{
                         },
                         body:JSON.stringify(this.state)
                     })
-                    .then(this.props.history.push('/'))
+                    .then(this.props.history.push('/home'))
             } else{ 
-                alert("Enter right phone no")
+                alert("Enter right phone no") 
             }
         
         }

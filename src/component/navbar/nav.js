@@ -19,20 +19,20 @@ class Navbar extends React.Component{
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><Link to="/"> Home </Link></li>
+                        <li><Link to="/home"> Home </Link></li>
                         <li><Link to="/sells"> Sells Book </Link></li>
                         <li><Link to="/booktype"> Book Type</Link> </li>
                         <li><Link to="/donatebooks">Donate Books</Link></li>
                         {/* //after login// */}
                         <li><Link to="/my_card"> MY Cart books</Link></li>
                         <li><Link to="/my_sells_books"> MY Books</Link></li>
-                        <li><a href="#">Hi {localStorage.getItem("username")} </a></li> 
+                         <li><a href="#">Hi {localStorage.getItem("username")} </a></li> 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><Link to="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</Link></li>
-                        <li><Link to="/login"><span class="glyphicon glyphicon-log-in"></span> Login</Link></li>
+                        {/* <li><Link to="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</Link></li>
+                        <li><Link to="/"><span class="glyphicon glyphicon-log-in"></span> Login</Link></li> */}
                         {/* //after login// */}
-                        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                        <li><Link to="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</Link></li>
                     </ul>
                     </div>
                     </div>

@@ -27,12 +27,13 @@ class Login extends React.Component{
         return response.json()})
     
         .then((data)=>{
+
             if((data).length===0){
                 console.log(data)
-                alert("wrong mobileno and password")
+                alert("wrong mobileno or password")
                 }
                 else{
-                   this.props.history.push('/')
+                   this.props.history.push('/home')
                    localStorage.setItem('username',data[0].name)
                 }
         }
@@ -41,14 +42,14 @@ class Login extends React.Component{
     }
     handelchange=(event)=>{
         this.setState({[event.target.name]:event.target.value})
-    }
+    } 
     render(){
         return(
             <>
               <img id="adminheaderimg" src="./images/headerimg.jpg" alt="wrong"/>
             <div className="container">
                 <ul className="nav nav-tabs">
-                    <li><Link to={'/'}>Home</Link></li>
+                    {/* <li><Link to={'/'}>Home</Link></li> */}
                     <li><Link to={'/login'}>Login</Link></li>
                     <li><Link className="active" to={'/signup'}>Sign up</Link></li>
                 </ul>
@@ -60,11 +61,11 @@ class Login extends React.Component{
             <center> <h2> Login Page </h2> </center> 
                     <div class="form-group">
                         <label >Mobile Number:</label>
-                        <input type="number" class="form-control" placeholder="Enter mobile number"  required autoComplete="off"  name="mobileno"  onChange={this.handelchange}/>
+                        <input type="number" required class="form-control" placeholder="Enter mobile number"  required autoComplete="off"  name="mobileno"  onChange={this.handelchange}/>
                     </div> 
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="text" class="form-control"  placeholder="Enter your password" required autoComplete="off" name="password"  onChange={this.handelchange}/>
+                        <input type="text" required class="form-control"  placeholder="Enter your password" required autoComplete="off" name="password"  onChange={this.handelchange}/>
                     </div>
                     <label class="checkbox-inline">
                         <input type="checkbox" value=""/>Remember me

@@ -37,7 +37,7 @@ class Donatebook extends React.Component{
                     image:this.state.image,
                 }) 
             })
-            .then(this.props.history.push('/'))
+            .then(this.props.history.push('/home'))
     }
  
     handelchange=(event)=>{

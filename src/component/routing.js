@@ -10,6 +10,7 @@ import Mysellbook from '../component/Mysellbooks/mysellbook'
 import Request from '../component/Request/Request'
 import Signup from '../component/Logindetails/signup'
 import Login from '../component/Logindetails/Login'
+import Logout from '../component/Logindetails/Logout'
 import Forgetpwd from '../component/Logindetails/Forgetpwd'
 import Admin from '../component/Adminfolder/Admin'
 import Adminnavbar from '../component/Adminfolder/adminnav'
@@ -27,9 +28,10 @@ import Donatereqapi from '../component/Adminfolder/Donatereqapi'
 import Subscriberlistapi  from '../component/Adminfolder/Connectionwithuser/Subscriberlistapi'
 const Routing = () => {
     return(
-       
+        
         <BrowserRouter>
-            <Route exact path='/' component={Home}/>
+            <Route  path='/home' component={Home}/>
+            <Route exact path="/" component={Login}/>
             <Route  path ='/sells' component={sells}/> 
             <Route exact path ='/booktype' component={Booktype}/>
             <Route path="/bookdetail/:id" component={Bookdetail}/>
@@ -38,7 +40,7 @@ const Routing = () => {
             <Route path="/my_sells_books" component={Mysellbook}/>
             <Route path ='/request' component={Request}/>
             <Route path='/signup' component={Signup}/>
-            <Route path="/login" component={Login}/>
+            <Route path="/logout" component={Logout}/>
             <Route path="/forgetpwd" component={Forgetpwd}/>
             <Route path="/admin_login" component={Admin}/>
             <Route path="/adminnav" component={Adminnavbar}/>

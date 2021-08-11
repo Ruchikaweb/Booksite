@@ -54,8 +54,8 @@ class Signup extends React.Component{
               <img id="adminheaderimg" src="./images/headerimg.jpg" alt="wrong"/>
             <div className="container">
                 <ul className="nav nav-tabs">
-                    <li><Link to={'/'}>Home</Link></li>
-                    <li><Link to={'/login'}>Login</Link></li>
+                    {/* <li><Link to={'/'}>Home</Link></li> */}
+                    <li><Link to={'/'}>Login</Link></li>
                     <li><Link className="active" to={'/signup'}>Sign up</Link></li>
                 </ul>
                 <br/>
