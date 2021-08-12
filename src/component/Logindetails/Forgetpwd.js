@@ -1,6 +1,7 @@
 import React from 'react' ;
 import {Link} from 'react-router-dom'
 const forget_api = "https://no1book-app.herokuapp.com/forgetpwd"
+const forget_update_api="https://no1book-app.herokuapp.com/forgetpwdupdate"
 class Forgetpwd extends React.Component{
     constructor(){
         super()
@@ -8,7 +9,8 @@ class Forgetpwd extends React.Component{
             email:'',
             selectquestion:'',
             answer:'',
-            newpassword:''
+            newpassword:'',
+            conformpassword:''
         } 
     } 
            
@@ -20,18 +22,31 @@ class Forgetpwd extends React.Component{
                 'Accept':'application/json',
                 'Content-Type':'application/json'
             },
-            body:JSON.stringify({email:this.state.email,selectquestion:this.state.selectquestion,answer:this.state.answer})
+            body:JSON.stringify({email:this.state.email,question:this.state.selectquestion,answer:this.state.answer})
         }) 
     
         .then((response)=>{ 
+            // console.log(response)
         return response.json()})
     
         .then((data)=>{
-            if((data).length===0){
-                alert("wrong mobileno and password")
+            console.log(data)
+            if(data.length===0){
+                alert("wrong  details")
                 }
                 else{
-                    console.log(data[0])
+                    fetch(forget_update_api,
+                        {
+                            method:'PUT',
+                            headers:{
+                                'Accept':'application/json',
+                                'Content-Type':'application/json'
+                            },
+                            body:JSON.stringify({email:this.state.email,password:this.state.newpassword, conformpassword:this.state. conformpassword})
+                        })
+                        .then((response) =>{
+                            alert("Update successfully")
+                        })
                 }
         }
     )
@@ -55,7 +70,7 @@ class Forgetpwd extends React.Component{
             </div> 
 
             <div className="container">
-            <form id="signupform" style={{fontSize:'19px'}}> 
+            <form  id="signupform" style={{fontSize:'19px'}}> 
             <center> <h2> forget password page </h2> </center> 
                     <div class="form-group">
                         <label >Email address:</label>
@@ -78,10 +93,14 @@ class Forgetpwd extends React.Component{
                     </div>
                     <div class="form-group">
                         <label>New Password</label>
-                        <input type="number" class="form-control"  placeholder="Enter new password"  autoComplete="off"  name=" newpassword" value={this.state.newpassword} onChange={this.handelchange}/>
+                        <input type="number" class="form-control"  placeholder="Enter new password"  autoComplete="off"  name="newpassword" value={this.state.newpassword} onChange={this.handelchange}/>
+                    </div>
+                    <div class="form-group">
+                        <label>Conform Password</label>
+                        <input type="number" class="form-control"  placeholder="Enter new password"  autoComplete="off"  name="conformpassword" value={this.state.conformpassword} onChange={this.handelchange}/>
                     </div>
 
-                    <button type="submit" id="requestbtn" onClick={this.handelsubmit} class="btn btn-success"> Submit </button>
+                    <button type="button" id="requestbtn" onClick={this.login} class="btn btn-success"> Submit </button>
                 </form>
                 
             </div>

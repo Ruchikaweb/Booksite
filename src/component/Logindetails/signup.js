@@ -22,9 +22,9 @@ class Signup extends React.Component{
         if(this.state.name==''||this.state.mobileno ==''||this.state.email ==''||this.state.address==''||this.state.password ==''||this.state.conformpassword ==''||this.state.selectquestion ==''||this.state.answer==''){
             alert("All filds are required")
         } else{ 
-            if(this.state.mobileno.length==10){
+            if(this.state.mobileno.length==10){ 
                 if((this.state.password===this.state.conformpassword)&&(this.state.password.length>=8 &&this.state.password.length<=16)){
-                    fetch(Url,
+                    fetch(Url, 
                         { 
                             method:'POST',
                             headers:{
