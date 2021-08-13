@@ -35,18 +35,23 @@ class Forgetpwd extends React.Component{
                 alert("wrong  details")
                 }
                 else{
-                    fetch(forget_update_api,
-                        {
-                            method:'PUT',
-                            headers:{
-                                'Accept':'application/json',
-                                'Content-Type':'application/json'
-                            },
-                            body:JSON.stringify({email:this.state.email,password:this.state.newpassword, conformpassword:this.state. conformpassword})
-                        })
-                        .then((response) =>{
-                            alert("Update successfully")
-                        })
+                    if((this.state.newpassword===this.state.conformpassword)&&(this.state.newpassword.length>=8 &&this.state.newpassword.length<=16)){
+                        fetch(forget_update_api,
+                            {
+                                method:'PUT',
+                                headers:{
+                                    'Accept':'application/json',
+                                    'Content-Type':'application/json'
+                                },
+                                body:JSON.stringify({email:this.state.email,password:this.state.newpassword, conformpassword:this.state. conformpassword})
+                            })
+                            .then((response) =>{
+                                alert("Update successfully")
+                            })
+                    }else{
+                        alert("Reccheck password password length should be 8 to 16 and newpassword and conform password should be equel.")
+                    }
+                   
                 }
         }
     )
@@ -93,11 +98,11 @@ class Forgetpwd extends React.Component{
                     </div>
                     <div class="form-group">
                         <label>New Password</label>
-                        <input type="number" class="form-control"  placeholder="Enter new password"  autoComplete="off"  name="newpassword" value={this.state.newpassword} onChange={this.handelchange}/>
+                        <input type="text" class="form-control"  placeholder="Enter new password"  autoComplete="off"  name="newpassword" value={this.state.newpassword} onChange={this.handelchange}/>
                     </div>
                     <div class="form-group">
                         <label>Conform Password</label>
-                        <input type="number" class="form-control"  placeholder="Enter new password"  autoComplete="off"  name="conformpassword" value={this.state.conformpassword} onChange={this.handelchange}/>
+                        <input type="text" class="form-control"  placeholder="Enter new password"  autoComplete="off"  name="conformpassword" value={this.state.conformpassword} onChange={this.handelchange}/>
                     </div>
 
                     <button type="button" id="requestbtn" onClick={this.login} class="btn btn-success"> Submit </button>
