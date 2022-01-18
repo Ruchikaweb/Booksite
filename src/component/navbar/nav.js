@@ -21,7 +21,7 @@ class Navbar extends React.Component{
                     <ul class="nav navbar-nav">
                         <li><Link to="/home"> Home </Link></li>
                         <li><Link to="/sells"> Sells Book </Link></li>
-                        <li><Link to="/booktype"> Book Type</Link> </li>
+                        <li><Link to="/booktype"> Available Books</Link> </li>
                         <li><Link to="/donatebooks">Donate Books</Link></li>
                         {/* //after login// */}
                         <li><Link to="/my_card"> MY Cart books</Link></li>

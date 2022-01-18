@@ -10,7 +10,7 @@ class Signup extends React.Component{
             mobileno:'',
             email:'',
             address:'',
-            password:'',
+            password:'', 
             conformpassword:'',
             selectquestion:'',
             answer:'',

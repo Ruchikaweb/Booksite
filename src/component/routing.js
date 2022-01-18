@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter,Route} from 'react-router-dom' 
 import Home from '../component/Home/home'
-import sells from '../component/sellsbbook/sell'
+import Sells from '../component/sellsbbook/sell'
 import Booktype from '../component/booktype/booktype'
 import Donatebook from '../component/Donatebooks/Donatebook'
 import Bookdetail from '../component/bookdetails/Bookdetail'
@@ -32,7 +32,7 @@ const Routing = () => {
         <BrowserRouter>
             <Route  path='/home' component={Home}/>
             <Route exact path="/" component={Login}/>
-            <Route  path ='/sells' component={sells}/> 
+            <Route  path ='/sells' component={Sells}/> 
             <Route exact path ='/booktype' component={Booktype}/>
             <Route path="/bookdetail/:id" component={Bookdetail}/>
             <Route path="/donatebooks" component={Donatebook}/>
